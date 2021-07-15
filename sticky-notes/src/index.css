@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: lightyellow;
+}
+
+input,
+textarea {
+  outline: none;
+  resize: none;
+  color: grey;
+}
+
+.sticky-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0;
+}
+
+.sticky-header-title {
+  margin: 10px 20px 0px;
+  font-family: Arial, sans-serif;
+  font-family: "Permanent Marker";
+}
+
+.sticky-header-controls {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 10px;
+}
+
+.search,
+.add-sticky {
+  font-size: 14px;
+  padding: 5px;
+  margin: 8px;
+}
+
+.search {
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.add-sticky {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: bolder;
+  background-color: #eee;
+  outline: none;
+}
+
+.sticky-note {
+  font-family: "Permanent Marker", cursive;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: lightcyan;
+  border: 1px solid darkblue;
+  box-shadow: 2px 2px 3px slategray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sticky-note-name,
+.sticky-note-description {
+  font-family: "Permanent Marker", cursive;
+  width: 100%;
+  padding: 8px 14px;
+  background: transparent;
+}
+
+.sticky-note-name {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Permanent Marker", cursive;
+  color: black;
+}
+
+.sticky-note-description {
+  flex-grow: 1;
+  font-size: 14px;
+  color: black;
+}
+
+.remove-sticky {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  color: lightgrey;
+  padding: 5px;
+}
+
+.remove-sticky:hover {
+  color: black;
+  cursor: pointer;
+}
